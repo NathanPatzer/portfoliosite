@@ -10,7 +10,6 @@ const Navbar = () => {
         setCurrPage(page);
     }
 
-    
     useEffect(() => {
         sessionStorage.setItem('Portfolio_Page',currPage)
     },[currPage])

@@ -68,19 +68,19 @@ const Me = () => {
         </div>
       <div>
       <div className='experience'><h1>Experience</h1></div>
-      <ul className='project'>
+      <ul className='project sizing'>
         <li><Project name='CBRE - Financial Systems Specialist' desc = {specialist} date = "Jan 22 - Present"/>
         </li>
         <li><Project name='CBRE - Financial Systems Intern' desc = {intern} date = "May 21 - Aug 21"/></li>
       </ul>
       <div className='experience'><h1>Education/Skills</h1></div>
-      <ul className='project'>
+      <ul className='project sizing'>
         <li><Project name='University of Minnesota Duluth' desc = {duluth} date = "Graduated May 22"/></li>
         <li><Project name='Skills' desc = {skills}/></li>
       </ul>
 
       <div className='experience'><h1>Interests/Contact Info</h1></div>
-      <ul className='project'>
+      <ul className='project sizing'>
         <li><Project name='Interests' desc = {interests}/></li>
         <li><Project name='Contact Info' desc = {contactinfo}/></li>
       </ul>
