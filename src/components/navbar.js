@@ -5,7 +5,7 @@ import resume from '../images/Nathan Patzers Resume.pdf'
 
 
 const Navbar = () => {
-    const [currPage,setCurrPage] = useState(localStorage.getItem('Portfolio_Page') !== null ? (localStorage.getItem('Portfolio_Page')) : "About");
+    const [currPage,setCurrPage] = useState(sessionStorage.getItem('Portfolio_Page') !== null ? (sessionStorage.getItem('Portfolio_Page')) : "About");
 
     const handleLinkClick = (page) => {
         setCurrPage(page);
@@ -14,7 +14,7 @@ const Navbar = () => {
 
     useEffect(() => {
         console.log(currPage)
-        localStorage.setItem('Portfolio_Page',currPage)
+        sessionStorage.setItem('Portfolio_Page',currPage)
     },[currPage])
   return (
     <>
