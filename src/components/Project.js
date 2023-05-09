@@ -29,8 +29,8 @@ const Project = (props) => {
       </div>
       <h3>{date}</h3>
       <div>{Array.isArray(desc) ? (
-        desc.map((item) => (
-          <p>{item}</p>
+        desc.map((item,index) => (
+          <p key={index}>{item}</p>
         ))
       ) : desc}
       </div>
@@ -45,7 +45,7 @@ const Project = (props) => {
       ) : ''}
       {langs ? (<div className='languages'>
         {langs?.map((logos) => (
-          <img title = {logos[1]} src={logos[0]} alt = "pic"/>
+          <img key = {logos} title = {logos[1]} src={logos[0]} alt = "pic"/>
         ))}
       </div>) : ''}
     </div>

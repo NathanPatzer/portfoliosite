@@ -46,15 +46,15 @@ const Me = () => {
   const isMobile = useMediaQuery({query: '(max-width: 700px)'})
   return (
     <>
-      <div class="container">
-        <div class="leftpane">
+      <div className="container">
+        <div className="leftpane">
           <h1>Who Am I</h1>
           {text.whoami}
         </div>
-        <div class="middlepane">
+        <div className="middlepane">
           <Slider slides = {pics} dims = {isMobile ? (mobiledims) : (desktopdims)} radius = '250px'/>
         </div>
-        <div class="rightpane">
+        <div className="rightpane">
           <h1>Favorite Languages</h1>
           <div className="grid-container">
           <div className="grid-item"><img title = 'C++' src={imgs.cpplogo} alt="Logo 1"/></div>
