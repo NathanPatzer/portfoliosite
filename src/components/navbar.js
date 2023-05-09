@@ -5,22 +5,16 @@ import resume from '../images/Nathan Patzers Resume.pdf'
 
 
 const Navbar = () => {
-    const [currPage,setCurrPage] = useState(sessionStorage.getItem('Portfolio_Page') !== null ? (sessionStorage.getItem('Portfolio_Page')) : "About");
+    const [currPage,setCurrPage] = useState(localStorage.getItem('Portfolio_Page') !== null ? (localStorage.getItem('Portfolio_Page')) : "About");
 
     const handleLinkClick = (page) => {
         setCurrPage(page);
     }
-    const openResume = () => {
-        window.open(resume);
-      }
+
 
     useEffect(() => {
-        const highLightedPage = window.sessionStorage.getItem('Portfolio_Page')
-        console.log(highLightedPage)
-        if (highLightedPage !== null) setCurrPage(highLightedPage)
-    },[])
-    useEffect(() => {
-        window.sessionStorage.setItem('Portfolio_Page',currPage)
+        console.log(currPage)
+        localStorage.setItem('Portfolio_Page',currPage)
     },[currPage])
   return (
     <>
@@ -33,7 +27,7 @@ const Navbar = () => {
                     <Link onClick = {() => handleLinkClick('Projects')} to = "Projects">Projects</Link>
                 </li>
                 <li>
-                    <a title = 'Download Resume' href = '.' onClick={openResume}>⇩Resume</a>
+                <Link to = {resume} target='_blank'>⇩Resume</Link>
                 </li> 
 
             </ul>
