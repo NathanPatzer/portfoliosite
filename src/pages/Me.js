@@ -61,7 +61,7 @@ const Me = () => {
           <div className="grid-item"><img title = 'Java' src={imgs.javalogo} alt="Logo 3"/></div>
           <div className="grid-item"><img title = 'Python' src={imgs.pylogo} alt="Logo 3"/></div>
           <div className="grid-item"><img title = 'C' src={imgs.clogo} alt="Logo 2"/></div>
-          <div className="grid-item"><img title = 'R' src={imgs.rustlogo} alt="Logo 2"/></div>
+          <div className="grid-item"><img title = 'Rust' src={imgs.rustlogo} alt="Logo 2"/></div>
           <div className="grid-item"><img title = 'JavaScript' src={imgs.jslogo} alt="Logo 3"/></div>
         </div>
           </div>
