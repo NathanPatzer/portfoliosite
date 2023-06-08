@@ -16,7 +16,11 @@ const IMAGES = {
     reactlogo: require('./React-icon.png'),
     linkedin: require('./linkedin2.jpg'),
     headshot: require('./headshot.png.jpg'),
-    grad: require('./grad.png')
+    grad: require('./grad.png'),
+    rustlogo: require('./rustlogo.png'),
+    dragon: require('./dragon.png'),
+    planck: require('./planck.png'),
+    homer: require('./homer.png'),
 
 }
 
